@@ -7,6 +7,7 @@ import { useFormStatus } from "react-dom"
 // EXPORTING A BUTTON COMPONENT
 export default function Button(){
     const {pending} = useFormStatus()
+    
     return (
       <button 
         type="submit" 

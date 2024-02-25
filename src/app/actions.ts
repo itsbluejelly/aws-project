@@ -7,9 +7,8 @@ import { revalidatePath } from "next/cache"
 import { FormState } from "@/types/types"
 
 // EXPORTING A SERVER ACTION THAT HANDLES FILE SUBMISSION
-export async function uploadFile(prevState: FormState, formData: unknown): Promise<FormState>{
+export async function uploadFile(prevState: FormState): Promise<FormState>{
     try{
-        console.log(formData)
         revalidatePath("/")
 
         return {
